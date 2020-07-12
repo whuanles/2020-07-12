@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "9962da97-4f50-405d-bd57-12eaf1c23f1b",
+		"name": "授权",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Book/Token?name=作者",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Book",
+						"Token"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "作者"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoi5L2c6ICFIiwiZW1haWwiOiJ3aXJ0ZXIiLCJuYmYiOjE1OTQ1NTc5NzAsImV4cCI6MTU5NDU1OTc3MCwiaXNzIjoic2VydmVyIiwiYXVkIjoiY2xpZW50MDA3In0.RZFOdmGTtZHcr3ODhEV6RJ91RslhUzVtK_0TcPsBFds",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Book/Add?body=aaaa",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Book",
+						"Add"
+					],
+					"query": [
+						{
+							"key": "body",
+							"value": "aaaa"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoi5L2c6ICFIiwiZW1haWwiOiJ3aXJ0ZXIiLCJuYmYiOjE1OTQ1NDYzMTUsImV4cCI6MTU5NDU0ODExNSwiaXNzIjoic2VydmVyIiwiYXVkIjoiY2xpZW50MDA3In0.q4ugHQ-VR-f4ohRybFQYZ2959tI-9uQwSjU9SwDlqRY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Select",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoi5L2c6ICFIiwiZW1haWwiOiJ3aXJ0ZXIiLCJuYmYiOjE1OTQ1NDYzMTUsImV4cCI6MTU5NDU0ODExNSwiaXNzIjoic2VydmVyIiwiYXVkIjoiY2xpZW50MDA3In0.q4ugHQ-VR-f4ohRybFQYZ2959tI-9uQwSjU9SwDlqRY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Book/Select",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Book",
+						"Select"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
